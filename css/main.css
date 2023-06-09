@@ -1,0 +1,79 @@
+*, body, html {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana,sans-serif;
+}
+.static {
+    background-color: /*rgb(21,32,43)*/ white;
+    display: flex;
+    justify-content: space-between;
+}
+.left {
+    float: left;
+}
+.left > a {
+    float: left;
+    padding: 10px;
+}
+a, a:hover, a:link, a:visited {
+    display: inline-block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    background-color: #04AA6D;
+    color: white;
+}
+.w3logo::before {
+    content: url("../img/w3.jpeg");
+}
+.langs {
+    background-color: #282A35;
+    float: left;
+    width: 100%;
+}
+.langs > a  {
+    padding: 10px;
+    float: left;
+    color: white;
+}
+.round-btn {
+    padding: 8px 16px;
+}
+.round-btn:hover {
+    border-radius: 25px;
+    background-color: #f1f1f1;
+    color: black;
+}
+aside {
+    width: 25%;
+    background-color: #E7E9EB;
+    float: left;
+    padding-top: 20px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+aside h2 {
+    font-size: 21px;
+    margin-bottom: 4px;
+}
+aside a {
+    display: block !important;
+}
+section {
+    width: 75%;
+    background-color: #f1f1f1;
+    float: left;
+}
+aside a:hover {
+    background-color: #cccccc;
+    color: black;
+}
+.active {
+    background-color: #04AA6D !important;
+    color: white !important;
+}
