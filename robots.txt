@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lahevodvika.github.io/W3Schools/index.html
