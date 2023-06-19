@@ -64,6 +64,11 @@ a {
 .round-btn:hover {
     background-color: var(--my-Hover);
 }
+.w3-btn {
+    background-color: var(--my-Green);
+    padding: 20px;
+    border-radius: 5px;
+}
 .langs {
     background-color: var(--my-Dark-Blue);
     float: left;
@@ -109,6 +114,7 @@ a {
 .main-content h1 {
     font-size: 40px;
     font-weight: normal;
+    padding: 10px;
 }
 .page-navigation a:link {
     background-color: var(--my-Green);
@@ -118,8 +124,8 @@ a {
 }
 .green-box {
     background-color: var(--green-box);
-    padding: 10px;
-    margin-top: 10px;
+    padding: 20px;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 .ads {
