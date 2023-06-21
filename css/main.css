@@ -24,6 +24,7 @@ body {
 header {
     grid-column: 1/4;
     background-color: var(--my-Blue);
+    z-index: 2;
 }
 h1 {
     font-weight: 600;
@@ -131,4 +132,47 @@ a {
 .ads {
     background-color: var(--my-Blue);
     border-left: #38444d 1px solid;
+}
+.closed {
+    display: none;
+}
+.mobile-nav {
+    grid-column: 1/4;
+}
+.opened {
+    z-index: 1;
+    display: block !important;
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    padding-top: 6rem;
+}
+@media only screen and (max-width: 800px) {
+    .navigation {
+        display: none;
+    }
+    .mobile-nav {
+        display: block;
+    }
+    .sidebar {
+        display: none;
+    }
+    .main-content {
+        grid-column: 1/4;
+    }
+}
+@media only screen and (min-width: 800px) {
+    .menu {
+        display: none;
+    }
+    .header {
+        z-index: 0;
+    }
+    .sidebar {
+        z-index: 0;
+        position: static;
+        width: auto;
+        height: auto;
+        padding-top: 0;
+    }
 }

@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/mobile.css">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>W3Schools</title>
@@ -26,6 +27,11 @@
 		Something
 	</section>-->
 	<header>
+		<nav class="mobile-nav closed">
+			<a href="#" class="nav-btn">
+				Menu
+			</a>
+		</nav>
 		<nav class="navigation">
 			<div class="left">
 				<a href="#" class="nav-btn">
@@ -47,6 +53,9 @@
 			</div>
 		</nav>
 		<nav class="langs">
+			<a href="#" class="lang menu">
+				<i class="fa fa-bars"></i>
+			</a>
 			<a href="" class="lang selected">HTML</a>
 			<a href="" class="lang">CSS</a>
 			<a href="" class="lang">Javascript</a>
@@ -88,4 +97,5 @@
 		Some ads
 	</section>
 </body>
+<script src="js/app.js"></script>
 </html>
