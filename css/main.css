@@ -18,7 +18,7 @@ body, html{
 }
 body {
     display: grid;
-    grid-template-columns: 15% 3fr 1fr;
+    grid-template-columns: 15% 4fr 1fr;
     grid-template-rows: auto 1fr;
 }
 header {
@@ -60,9 +60,11 @@ a {
     padding: 24px 10px 24px 10px;
     color: var(--my-White);
     border-radius: 20px;
+    background-color: rgb(55, 8, 142);
+    width: 50%;
 }
 .round-btn:hover {
-    background-color: var(--my-Hover);
+    background-color: #7d53cc !important;
 }
 .w3-btn {
     background-color: var(--my-Green);
@@ -131,4 +133,46 @@ a {
 .ads {
     background-color: var(--my-Blue);
     border-left: #38444d 1px solid;
+    text-align: center;
+    padding-top: 2rem;
+}
+.career {
+    background-color: #6e53a5;
+    border: 5px solid mediumpurple;
+    border-radius: 10px;
+}
+#mobile {
+    display: none;
+}
+.toggle {
+    display: none;
+}
+@media only screen and (max-width: 650px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+    .navigation {
+        display: none;
+    }
+    #mobile {
+        display: flex;
+        justify-content: space-between;
+    }
+    .sidebar {
+        display: none;
+    }
+    .main-content {
+        grid-column: 1/4;
+    }
+    .ads {
+        border: none;
+    }
+    .toggle {
+        display: inline-block;
+    }
+}
+@media only screen and (min-width: 651px) {
+    .sidebar {
+        display: block !important;
+    }
 }
